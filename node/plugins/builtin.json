@@ -1,0 +1,702 @@
+{
+	"functions": [
+		{
+			"value": "abs",
+			"source": "builtin",
+			"type": "function",
+			"definition": "abs($number) ⇒ Number",
+			"description": "Returns the absolute value of a number"
+		},
+		{
+			"value": "adjust-color",
+			"source": "builtin",
+			"type": "function",
+			"definition": "adjust_color($color, [$red], [$green], [$blue], [$hue], [$saturation], [$lightness], [$alpha]) ⇒ Color",
+			"description": "Increases or decreases one or more components of a color"
+		},
+		{
+			"value": "adjust-hue",
+			"source": "builtin",
+			"type": "function",
+			"definition": "adjust_hue($color, $degrees) ⇒ Color",
+			"description": "Changes the hue of a color"
+		},
+		{
+			"value": "alpha",
+			"source": "builtin",
+			"type": "function",
+			"definition": "alpha($color) ⇒ Number",
+			"description": "Gets the alpha component (opacity) of a color"
+		},
+		{
+			"value": "append",
+			"source": "builtin",
+			"type": "function",
+			"definition": "append($list, $val, $separator: auto) ⇒ List",
+			"description": "Appends a single value onto the end of a list"
+		},
+		{
+			"value": "blue",
+			"source": "builtin",
+			"type": "function",
+			"definition": "blue($color) ⇒ Number",
+			"description": "Gets the blue component of a color"
+		},
+		{
+			"value": "call",
+			"source": "builtin",
+			"type": "function",
+			"definition": "call($function, $args...) ⇒ Object",
+			"description": "Dynamically calls a Sass function reference returned by get-function"
+		},
+		{
+			"value": "ceil",
+			"source": "builtin",
+			"type": "function",
+			"definition": "ceil($number) ⇒ Number",
+			"description": "Rounds a number up to the next whole number"
+		},
+		{
+			"value": "change-color",
+			"source": "builtin",
+			"type": "function",
+			"definition": "change_color($color, [$red], [$green], [$blue], [$hue], [$saturation], [$lightness], [$alpha]) ⇒ Color",
+			"description": "Changes one or more properties of a color"
+		},
+		{
+			"value": "comparable",
+			"source": "builtin",
+			"type": "function",
+			"definition": "comparable($number1, $number2) ⇒ Bool",
+			"description": "Returns whether two numbers can be added, subtracted, or compared"
+		},
+		{
+			"value": "complement",
+			"source": "builtin",
+			"type": "function",
+			"definition": "complement($color) ⇒ Color",
+			"description": "Returns the complement of a color"
+		},
+		{
+			"value": "content-exists",
+			"source": "builtin",
+			"type": "function",
+			"definition": "content_exists() ⇒ Bool",
+			"description": "Returns whether the current mixin was passed a content block"
+		},
+		{
+			"value": "counter",
+			"source": "builtin",
+			"type": "function",
+			"definition": "counter($args...) ⇒ String",
+			"description": "This function only exists as a workaround for IE7's bug. It works identically to any other plain-CSS function, except it avoids adding spaces between the argument commas"
+		},
+		{
+			"value": "counters",
+			"source": "builtin",
+			"type": "function",
+			"definition": "counters($args...) ⇒ String",
+			"description": "This function only exists as a workaround for IE7's bug. It works identically to any other plain-CSS function, except it avoids adding spaces between the argument commas"
+		},
+		{
+			"value": "darken",
+			"source": "builtin",
+			"type": "function",
+			"definition": "darken($color, $amount) ⇒ Color",
+			"description": "Makes a color darker"
+		},
+		{
+			"value": "desaturate",
+			"source": "builtin",
+			"type": "function",
+			"definition": "desaturate($color, $amount) ⇒ Color",
+			"description": "Makes a color less saturated"
+		},
+		{
+			"value": "feature-exists",
+			"source": "builtin",
+			"type": "function",
+			"definition": "feature_exists($feature) ⇒ Bool",
+			"description": "Returns whether a feature exists in the current Sass runtime"
+		},
+		{
+			"value": "floor",
+			"source": "builtin",
+			"type": "function",
+			"definition": "floor($number) ⇒ Number",
+			"description": "Rounds a number down to the previous whole number"
+		},
+		{
+			"value": "function-exists",
+			"source": "builtin",
+			"type": "function",
+			"definition": "function_exists($name) ⇒ Bool",
+			"description": "Returns whether a function with the given name exists"
+		},
+		{
+			"value": "get-function",
+			"source": "builtin",
+			"type": "function",
+			"definition": "get_function($name, $css: false) ⇒ Function",
+			"description": "Looks up a function with the given name in the current lexical scope and returns a reference to it"
+		},
+		{
+			"value": "global-variable-exists",
+			"source": "builtin",
+			"type": "function",
+			"definition": "global_variable_exists($name) ⇒ Bool",
+			"description": "Returns whether a variable with the given name exists in the global scope"
+		},
+		{
+			"value": "grayscale",
+			"source": "builtin",
+			"type": "function",
+			"definition": "grayscale($color) ⇒ Color",
+			"description": "Converts a color to grayscale"
+		},
+		{
+			"value": "green",
+			"source": "builtin",
+			"type": "function",
+			"definition": "green($color) ⇒ Number",
+			"description": "Gets the green component of a color"
+		},
+		{
+			"value": "hsl",
+			"source": "builtin",
+			"type": "function",
+			"definition": "hsl($hue, $saturation, $lightness) ⇒ Color",
+			"description": "Creates a Color from hue, saturation and lightness values"
+		},
+		{
+			"value": "hsla",
+			"source": "builtin",
+			"type": "function",
+			"definition": "hsla($hue, $saturation, $lightness, $alpha) ⇒ Color",
+			"description": "Creates a Color from hue, saturation, lightness and alpha values"
+		},
+		{
+			"value": "hue",
+			"source": "builtin",
+			"type": "function",
+			"definition": "hue($color) ⇒ Number",
+			"description": "Gets the hue component of a color"
+		},
+		{
+			"value": "ie-hex-str",
+			"source": "builtin",
+			"type": "function",
+			"definition": "ie_hex_str($color) ⇒ String",
+			"description": "Converts a color into the format understood by IE filters"
+		},
+		{
+			"value": "if",
+			"source": "builtin",
+			"type": "function",
+			"definition": "if($condition, $if-true, $if-false) ⇒ Base",
+			"description": "Returns one of two values, depending on whether or not $condition is true"
+		},
+		{
+			"value": "index",
+			"source": "builtin",
+			"type": "function",
+			"definition": "index($list, $value) ⇒ Number, Null",
+			"description": "Returns the position of a value within a list"
+		},
+		{
+			"value": "inspect",
+			"source": "builtin",
+			"type": "function",
+			"definition": "inspect($value) ⇒ String",
+			"description": "Returns the string representation of a value as it would be represented in Sass"
+		},
+		{
+			"value": "invert",
+			"source": "builtin",
+			"type": "function",
+			"definition": "invert(color, weight = number(100)) ⇒ Color",
+			"description": "Returns the inverse of a color"
+		},
+		{
+			"value": "is-bracketed",
+			"source": "builtin",
+			"type": "function",
+			"definition": "is_bracketed($list) ⇒ Bool",
+			"description": "Returns whether a list has square brackets"
+		},
+		{
+			"value": "is-superselector",
+			"source": "builtin",
+			"type": "function",
+			"definition": "is_superselector($super, $sub) ⇒ Bool",
+			"description": "Returns whether $super matches all the elements $sub does and possibly more"
+		},
+		{
+			"value": "join",
+			"source": "builtin",
+			"type": "function",
+			"definition": "join($list1, $list2, $separator: auto, $bracketed: auto) ⇒ List",
+			"description": "Joins together two lists into one"
+		},
+		{
+			"value": "keywords",
+			"source": "builtin",
+			"type": "function",
+			"definition": "keywords($args) ⇒ Map",
+			"description": "Returns the keywords passed to a function that takes variable arguments"
+		},
+		{
+			"value": "length",
+			"source": "builtin",
+			"type": "function",
+			"definition": "length($list) ⇒ Number",
+			"description": "Returns the length of a list"
+		},
+		{
+			"value": "lighten",
+			"source": "builtin",
+			"type": "function",
+			"definition": "lighten($color, $amount) ⇒ Color",
+			"description": "Makes a color lighter"
+		},
+		{
+			"value": "lightness",
+			"source": "builtin",
+			"type": "function",
+			"definition": "lightness($color) ⇒ Number",
+			"description": "Gets the lightness component of a color"
+		},
+		{
+			"value": "list-separator",
+			"source": "builtin",
+			"type": "function",
+			"definition": "list_separator($list) ⇒ String",
+			"description": "Returns the separator of a list"
+		},
+		{
+			"value": "map-get",
+			"source": "builtin",
+			"type": "function",
+			"definition": "map_get($map, $key) ⇒ Base",
+			"description": "Returns the value in a map associated with a given key"
+		},
+		{
+			"value": "map-has-key",
+			"source": "builtin",
+			"type": "function",
+			"definition": "map_has_key($map, $key) ⇒ Bool",
+			"description": "Returns whether a map has a value associated with a given key"
+		},
+		{
+			"value": "map-keys",
+			"source": "builtin",
+			"type": "function",
+			"definition": "map_keys($map) ⇒ List",
+			"description": "Returns a list of all keys in a map"
+		},
+		{
+			"value": "map-merge",
+			"source": "builtin",
+			"type": "function",
+			"definition": "map_merge($map1, $map2) ⇒ Map",
+			"description": "Merges two maps together into a new map"
+		},
+		{
+			"value": "map-remove",
+			"source": "builtin",
+			"type": "function",
+			"definition": "map_remove($map, $keys...) ⇒ Map",
+			"description": "Returns a new map with keys removed"
+		},
+		{
+			"value": "map-values",
+			"source": "builtin",
+			"type": "function",
+			"definition": "map_values($map) ⇒ List",
+			"description": "Returns a list of all values in a map"
+		},
+		{
+			"value": "max",
+			"source": "builtin",
+			"type": "function",
+			"definition": "max($numbers...) ⇒ Number",
+			"description": "Finds the maximum of several numbers"
+		},
+		{
+			"value": "min",
+			"source": "builtin",
+			"type": "function",
+			"definition": "min($numbers...) ⇒ Number",
+			"description": "Finds the minimum of several numbers"
+		},
+		{
+			"value": "mix",
+			"source": "builtin",
+			"type": "function",
+			"definition": "mix($color1, $color2, $weight: 50%) ⇒ Color",
+			"description": "Mixes two colors together"
+		},
+		{
+			"value": "mixin-exists",
+			"source": "builtin",
+			"type": "function",
+			"definition": "mixin_exists($name) ⇒ Bool",
+			"description": "Returns whether a mixin with the given name exists"
+		},
+		{
+			"value": "nth",
+			"source": "builtin",
+			"type": "function",
+			"definition": "nth($list, $n) ⇒ Base",
+			"description": "Returns a specific item in a list"
+		},
+		{
+			"value": "opacify",
+			"source": "builtin",
+			"type": "function",
+			"definition": "opacify($color, $amount) ⇒ Color  (also known as: 'fade_in')",
+			"description": "Makes a color more opaque"
+		},
+		{
+			"value": "percentage",
+			"source": "builtin",
+			"type": "function",
+			"definition": "opacity($color) ⇒ Number",
+			"description": "Converts a unitless number to a percentage"
+		},
+		{
+			"value": "quote",
+			"source": "builtin",
+			"type": "function",
+			"definition": "percentage($number) ⇒ Number",
+			"description": "Adds quotes to a string"
+		},
+		{
+			"value": "random",
+			"source": "builtin",
+			"type": "function",
+			"definition": "quote($string) ⇒ String",
+			"description": "Returns a random number"
+		},
+		{
+			"value": "red",
+			"source": "builtin",
+			"type": "function",
+			"definition": "random(limit = nil) ⇒ Object ",
+			"description": "Gets the red component of a color"
+		},
+		{
+			"value": "rgb",
+			"source": "builtin",
+			"type": "function",
+			"definition": "red($color) ⇒ Number",
+			"description": "Creates a Color from red, green, and blue values"
+		},
+		{
+			"value": "rgba",
+			"source": "builtin",
+			"type": "function",
+			"definition": "rgb($red, $green, $blue) ⇒ Color",
+			"description": "Changes the alpha component for a color"
+		},
+		{
+			"value": "rgba",
+			"source": "builtin",
+			"type": "function",
+			"definition": "rgba(*args) ⇒ Object",
+			"description": "Creates a Color from red, green, blue, and alpha values"
+		},
+		{
+			"value": "round",
+			"source": "builtin",
+			"type": "function",
+			"definition": "round($number) ⇒ Number",
+			"description": "Rounds a number to the nearest whole number"
+		},
+		{
+			"value": "saturate",
+			"source": "builtin",
+			"type": "function",
+			"definition": "saturate($color, $amount) ⇒ Color",
+			"description": "Makes a color more saturated"
+		},
+		{
+			"value": "saturation",
+			"source": "builtin",
+			"type": "function",
+			"definition": "saturation($color) ⇒ Number",
+			"description": "Gets the saturation component of a color"
+		},
+		{
+			"value": "scale-color",
+			"source": "builtin",
+			"type": "function",
+			"definition": "scale_color($color, [$red], [$green], [$blue], [$saturation], [$lightness], [$alpha]) ⇒ Color",
+			"description": "Fluidly scales one or more properties of a color"
+		},
+		{
+			"value": "selector-append",
+			"source": "builtin",
+			"type": "function",
+			"definition": "selector_append($selectors...) ⇒ List",
+			"description": "Appends selectors to one another without spaces in between"
+		},
+		{
+			"value": "selector-extend",
+			"source": "builtin",
+			"type": "function",
+			"definition": "selector_extend($selector, $extendee, $extender) ⇒ List",
+			"description": "Extends $extendee with $extender within $selector"
+		},
+		{
+			"value": "selector-nest",
+			"source": "builtin",
+			"type": "function",
+			"definition": "selector_nest($selectors...) ⇒ List",
+			"description": "Nests selector beneath one another like they would be nested in the stylesheet"
+		},
+		{
+			"value": "selector-parse",
+			"source": "builtin",
+			"type": "function",
+			"definition": "selector_parse($selector) ⇒ List",
+			"description": "Parses a selector into the format returned by &"
+		},
+		{
+			"value": "selector-replace",
+			"source": "builtin",
+			"type": "function",
+			"definition": "selector_replace($selector, $original, $replacement) ⇒ List",
+			"description": "Replaces $original with $replacement within $selector"
+		},
+		{
+			"value": "selector-unify",
+			"source": "builtin",
+			"type": "function",
+			"definition": "selector_unify($selector1, $selector2) ⇒ List, Null",
+			"description": "Unifies two selectors to produce a selector that matches elements matched by both"
+		},
+		{
+			"value": "set-nth",
+			"source": "builtin",
+			"type": "function",
+			"definition": "set ⇒ List",
+			"description": "Replaces the nth item in a list"
+		},
+		{
+			"value": "simple-selectors",
+			"source": "builtin",
+			"type": "function",
+			"definition": "simple_selectors($selector) ⇒ List",
+			"description": "Returns the simple selectors that comprise a compound selector"
+		},
+		{
+			"value": "str-index",
+			"source": "builtin",
+			"type": "function",
+			"definition": "str_index($string, $substring) ⇒ Number, Null",
+			"description": "Returns the index of the first occurrence of $substring in $string"
+		},
+		{
+			"value": "str-insert",
+			"source": "builtin",
+			"type": "function",
+			"definition": "str_insert($string, $insert, $index) ⇒ String",
+			"description": "Inserts $insert into $string at $index"
+		},
+		{
+			"value": "str-length",
+			"source": "builtin",
+			"type": "function",
+			"definition": "str_length($string) ⇒ Number",
+			"description": "Returns the number of characters in a string"
+		},
+		{
+			"value": "str-slice",
+			"source": "builtin",
+			"type": "function",
+			"definition": "str_slice($string, $start-at, $end-at: -1) ⇒ String",
+			"description": "Extracts a substring from $string"
+		},
+		{
+			"value": "to-lower-case",
+			"source": "builtin",
+			"type": "function",
+			"definition": "to_lower_case($string) ⇒ String",
+			"description": "Converts a string to lower case"
+		},
+		{
+			"value": "to-upper-case",
+			"source": "builtin",
+			"type": "function",
+			"definition": "to_upper_case($string) ⇒ String",
+			"description": "Converts a string to upper case"
+		},
+		{
+			"value": "transparentize",
+			"source": "builtin",
+			"type": "function",
+			"definition": "transparentize($color, $amount) ⇒ Color  (also known as : 'fade_out')",
+			"description": "Makes a color more transparent"
+		},
+		{
+			"value": "type-of",
+			"source": "builtin",
+			"type": "function",
+			"definition": "type_of($value) ⇒ String",
+			"description": "Returns the type of a value"
+		},
+		{
+			"value": "unique-id",
+			"source": "builtin",
+			"type": "function",
+			"definition": "unique_id ⇒ String",
+			"description": "Returns a unique CSS identifier"
+		},
+		{
+			"value": "unit",
+			"source": "builtin",
+			"type": "function",
+			"definition": "unit($number) ⇒ String",
+			"description": "Returns the unit(s) associated with a number"
+		},
+		{
+			"value": "unitless",
+			"source": "builtin",
+			"type": "function",
+			"definition": "unitless($number) ⇒ Bool",
+			"description": "Returns whether a number has units"
+		},
+		{
+			"value": "unquote",
+			"source": "builtin",
+			"type": "function",
+			"definition": "unquote($string) ⇒ String",
+			"description": "Removes quotes from a string"
+		},
+		{
+			"value": "variable-exists",
+			"source": "builtin",
+			"type": "function",
+			"definition": "variable_exists($name) ⇒ Bool",
+			"description": "Returns whether a variable with the given name exists in the current scope"
+		},
+		{
+			"value": "zip",
+			"source": "builtin",
+			"type": "function",
+			"definition": "zip($lists...) ⇒ List",
+			"description": "Combines several lists into a single multidimensional list"
+		}
+	],
+	"atrules": [
+		{
+			"value": "@import",
+			"source": "builtin",
+			"type": "keyword",
+			"description": "Sass extends the CSS @import rule to allow it to import SCSS and Sass files."
+		},
+		{
+			"value": "@include",
+			"source": "builtin",
+			"type": "keyword",
+			"description": "Mixins are included in the document with the @include directive."
+		},
+		{
+			"value": "@extend",
+			"source": "builtin",
+			"type": "keyword",
+			"description": "The @extend directive tells that one selector should inherit the styles of another selector."
+		},
+		{
+			"value": "@media",
+			"source": "builtin",
+			"type": "keyword",
+			"description": "@media directives in Sass behave just like they do in plain CSS, with one extra capability: they can be nested in CSS rules."
+		},
+		{
+			"value": "@content",
+			"source": "builtin",
+			"type": "keyword",
+			"description": "@content is used to pass a block of styles to the mixin for placement within the styles included by the mixin."
+		},
+		{
+			"value": "@at-root",
+			"source": "builtin",
+			"type": "keyword",
+			"description": "The @at-root directive causes one or more rules to be emitted at the root of the document, rather than being nested beneath their parent selectors."
+		},
+		{
+			"value": "@debug",
+			"source": "builtin",
+			"type": "keyword",
+			"description": "The @debug directive prints the value of a SassScript expression to the standard error output stream."
+		},
+		{
+			"value": "@warn",
+			"source": "builtin",
+			"type": "keyword",
+			"description": "The @warn directive prints the value of a SassScript expression to the standard error output stream."
+		},
+		{
+			"value": "@error",
+			"source": "builtin",
+			"type": "keyword",
+			"description": "The @error directive throws the value of a SassScript expression as a fatal error, including a nice stack trace."
+		},
+		{
+			"value": "@if",
+			"source": "builtin",
+			"type": "keyword",
+			"description": "The @if directive takes a SassScript expression and uses the styles nested beneath it if the expression returns anything other than false or null."
+		},
+		{
+			"value": "@else",
+			"source": "builtin",
+			"type": "keyword",
+			"description": "The @if statement can be followed by several `@else if` statements and one @else statement."
+		},
+		{
+			"value": "@for",
+			"source": "builtin",
+			"type": "keyword",
+			"description": "The @for directive repeatedly outputs a set of styles."
+		},
+		{
+			"value": "@while",
+			"source": "builtin",
+			"type": "keyword",
+			"description": "The @while directive takes a SassScript expression and repeatedly outputs the nested styles until the statement evaluates to false."
+		},
+		{
+			"value": "@each",
+			"source": "builtin",
+			"type": "keyword",
+			"description": "Similar to @for, except that it usually has the form `@each $var in <list or map>`. The @each directive can also use multiple variables."
+		},
+		{
+			"value": "@mixin",
+			"source": "builtin",
+			"type": "keyword",
+			"description": "Mixins allow you to define styles that can be re-used throughout the stylesheet without needing to resort to non-semantic classes like .float-left."
+		},
+		{
+			"value": "@function",
+			"source": "builtin",
+			"type": "keyword",
+			"description": "@function can be used to define your own functions in sass and use them in any value or script context."
+		},
+		{
+			"value": "@return",
+			"source": "builtin",
+			"type": "keyword",
+			"description": "@return is used to set the return value of a function."
+		},
+		{
+			"value": "@charset",
+			"source": "builtin",
+			"type": "keyword",
+			"description": "To explicitly specify the encoding of your stylesheet, use a @charset declaration just like in CSS."
+		}
+	]
+}
