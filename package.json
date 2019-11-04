@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Contextually intelligent hints for SCSS (variables, mixins, functions etc.) in Brackets",
   "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/shubhsnov/intelligent-scss-hints.git"

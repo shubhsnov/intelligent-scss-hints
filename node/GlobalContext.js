@@ -1,6 +1,6 @@
 "use strict";
 
-var Analyzer = require("sass-analyzer").Analyzer,
+var Analyzer = require("scss-analyzer").Analyzer,
     FileHandler = require("./FileHandler");
 
 var globalContext = {},

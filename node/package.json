@@ -1,5 +1,5 @@
 {
     "dependencies": {
-        "sass-analyzer": "git+ssh://git@git.corp.adobe.com:shubyada/sass-analyzer.git"
+        "scss-analyzer": "git+https://git@github.com/shubhsnov/scss-analyzer.git"
     }
 }
